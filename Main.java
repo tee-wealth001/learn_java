@@ -53,7 +53,7 @@ public class Main {
             worker.lname = "Smith";
             worker.age = 37;
             System.out.println("Enter Salary");
-            String salary = scanner.nextLine();
+            double salary = scanner.nextDouble();
             System.out.println(
                     "My name is >>>>>  " + worker.fname + worker.lname + " and i am " + worker.age + " earning:"
                             + salary);
