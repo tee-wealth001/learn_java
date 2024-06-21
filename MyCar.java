@@ -16,6 +16,7 @@ public class MyCar implements Vehicle, AutoMobile{
     // from automobile
     @Override
     public void fuelConsumption() {
-        System.out.println("I consume fuel alot");
+        Level level = Level.HIGH;
+        System.out.println("My fuel level is very " + level);
     }
 }

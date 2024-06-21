@@ -24,6 +24,7 @@ public class Main {
         MyCar myCar = new MyCar();
         myCar.fullThrottle();
         myCar.speed(200);
+        myCar.fuelConsumption();
 
         Student student = new Student();
         student.fname = "AliAce";
