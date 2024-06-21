@@ -3,6 +3,10 @@
 // import package.name.* (all packages)
 //import package.name.Class (single package)
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Main {
@@ -68,5 +72,16 @@ public class Main {
         // needs to create the instance of its object before it is called
         Main main = new Main();
         main.publicMethod();
+
+        LocalDate date = LocalDate.now();
+        LocalTime time = LocalTime.now();
+        System.out.println(date + " " + time);
+
+        LocalDateTime dateTime = LocalDateTime.now();
+
+        DateTimeFormatter formatedDateTime = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        String stringifiedFormattedDateTime = dateTime.format(formatedDateTime);
+        System.out.println(dateTime + " <<<<>>>>" + stringifiedFormattedDateTime);
+
     }
 }
