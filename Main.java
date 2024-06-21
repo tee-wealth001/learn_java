@@ -2,22 +2,23 @@
 //built-in packages
 // import package.name.* (all packages)
 //import package.name.Class (single package)
+
 import java.util.Scanner;
 
-public class Main{
+public class Main {
 
-    static void staticMethod(){
+    static void staticMethod() {
         System.out.println("just testing static method");
     }
 
-    public void publicMethod(){
+    public void publicMethod() {
         System.out.println("just testing void method");
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Second sec = new Second();
-        System.out.println("Hello world!! >>>>>  " + sec.fname + sec.lname + " "+ sec.age);
+        System.out.println("Hello world!! >>>>>  " + sec.fname + sec.lname + " " + sec.age);
         sec.doSomething();
 
         MyCar myCar = new MyCar();
@@ -38,9 +39,9 @@ public class Main{
         // inner class demonstration
         Student.StudentType studentType = student.new StudentType();
         String stdTyp = studentType.studentType = "Part Time";
-        System.out.println("My name is >>>>>  "+student.fname + student.lname +" and i am "+student.age +", i am studying "+student.getDiscipline()+" "+stdTyp);
-
-
+        int wrkHrs = studentType.displayWorkHours();
+        System.out.println("My name is >>>>>  " + student.fname + student.lname + " and i am " + student.age
+                + ", i am studying " + student.getDiscipline() + " " + stdTyp + " I work" + wrkHrs + " per week");
 
         Worker worker = new Worker();
         worker.fname = "Donald";
@@ -48,12 +49,11 @@ public class Main{
         worker.age = 37;
         System.out.println("Enter Salary");
         String salary = scanner.nextLine();
-        System.out.println("My name is >>>>>  " + worker.fname + worker.lname + " and i am "+ worker.age + " earning:" + salary);
+        System.out.println(
+                "My name is >>>>>  " + worker.fname + worker.lname + " and i am " + worker.age + " earning:" + salary);
         worker.eatTime();
         worker.sleepTime();
         worker.workType();
-
-
 
         // called directly cos its a static method
         staticMethod();
@@ -63,4 +63,3 @@ public class Main{
         main.publicMethod();
     }
 }
-

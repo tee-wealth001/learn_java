@@ -1,8 +1,8 @@
 //inheritance this is a sub class
-public class Worker  extends Human{
+public class Worker extends Human {
 
-    public  String salary;
-    
+    public String salary;
+
     // inherited method from the Human class
     // polymorphed from the parent superclass
     @Override
@@ -19,5 +19,5 @@ public class Worker  extends Human{
     void workType() {
         System.out.println("I work everyday");
     }
-    
+
 }
