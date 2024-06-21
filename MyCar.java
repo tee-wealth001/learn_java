@@ -1,3 +1,5 @@
+// overrides all methods from the interface(vehicle) it implements
+// a class can implement multiple interfaces
 public class MyCar implements Vehicle{
 
     @Override

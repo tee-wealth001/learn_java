@@ -1,4 +1,5 @@
 //inheritance this is a sub class
+// a class can only inherit from one superclass
 public class Student extends Human {
 
     // encapsulation - sensitive data is hidden from users
