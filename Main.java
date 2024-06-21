@@ -54,6 +54,7 @@ public class Main {
         worker.eatTime();
         worker.sleepTime();
         worker.workType();
+        
 
         // called directly cos its a static method
         staticMethod();
