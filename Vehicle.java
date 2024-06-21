@@ -10,3 +10,9 @@ interface Vehicle {
     public void fullThrottle();
     public void speed(int speed);
 }
+
+// trying to implement multiple interfaces
+interface AutoMobile {
+
+    public void fuelConsumption();
+}
