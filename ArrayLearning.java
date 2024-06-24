@@ -110,6 +110,7 @@ public class ArrayLearning {
         // reverse the order of sorted list
         Collections.sort(linkedList, Collections.reverseOrder());
 
+        // lamda expression 
         linkedList.forEach(l -> System.out.println("member >>>>" + l));
     }
 
