@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class ArrayLearning {
@@ -129,6 +130,17 @@ public class ArrayLearning {
 
         // remove an element
         hashSet.remove("mango");
+
+        // using iterator to loop through collections
+        Iterator<String> it = hashSet.iterator();
+
+        System.out.println(it.hasNext());
+
+        while (it.hasNext()) {
+            String elem = it.next();
+
+            System.out.println("iterator >>>" + elem);
+        }
 
         System.out.println(hashSet);
 
