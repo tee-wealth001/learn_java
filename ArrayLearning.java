@@ -6,12 +6,17 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+// All uses wrapper class <String>, <Integer>, <Boolean> ....etc
+// to create a wrapper object, use the wrapper class instead of the primitive type.
+// use the corresponding function to get a wrapper object value eg .intValue(), .doubleValue() ....etc
 public class ArrayLearning {
+
+    Integer x = 5;
 
     // constructor is called automatically when the object instance is created
     public ArrayLearning() {
 
-        System.out.println("Arrays");
+        System.out.println("Arrays ...x.." + x.intValue());
 
         ArrayListLearning();
 
