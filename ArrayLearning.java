@@ -18,6 +18,24 @@ public class ArrayLearning {
 
         System.out.println("Arrays ...x.." + x.intValue());
 
+        int[] myNum = { 1, 2, 3 };
+
+        // helps to catch errors
+        try {
+            System.out.println(myNum[10]);
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("there is an error");
+        } finally {
+            // executed after the try, catch
+            System.out.println("there is no member of index 10");
+        }
+
+        // testing custom exceptions
+        // if (myNum.length > 2) {
+        // throw new ArithmeticException("this is custom made error");
+        // }
+
         ArrayListLearning();
 
         LinkedListLearning();
@@ -151,5 +169,4 @@ public class ArrayLearning {
 
         hashSet.clear();
     }
-
 }
