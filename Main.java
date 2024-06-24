@@ -108,8 +108,10 @@ public class Main extends Thread implements Runnable {
         // String stringifiedFormattedDateTime = dateTime.format(formatedDateTime);
         // System.out.println(dateTime + " <<<<>>>>" + stringifiedFormattedDateTime);
 
-        ArrayLearning arrayLearning = new ArrayLearning();
+        // ArrayLearning arrayLearning = new ArrayLearning();
 
-        RegExLearning regExLearning = new RegExLearning();
+        // RegExLearning regExLearning = new RegExLearning();
+
+        FileLearning fileLearning = new FileLearning();
     }
 }
